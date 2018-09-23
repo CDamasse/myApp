@@ -1,3 +1,23 @@
 page-home {
-
+  ion-title{
+    font-family: Raleway-Regular, sans-serif;
+  }
+  #settings-button{
+    background: none;
+  }
+  .master{
+    background: color($colors, background, base);
+    #buttons{
+      padding-top: 150px;
+      button{
+        background: color($colors, button, base);
+      }
+      .buttons-menu{
+        padding-top: 30px;
+      }
+    }
+  }
+  ion-icon{
+    font-size: 30px;
+  }
 }

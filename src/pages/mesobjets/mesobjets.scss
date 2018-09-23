@@ -1,0 +1,14 @@
+page-mesobjets {
+  .master{
+    background: color($colors, background, base);
+    ion-list{
+      ion-item{
+        background: none;
+        color: #F2F4F3;
+      }
+    }
+  }
+  ion-icon{
+      font-size: 30px;
+  }
+}

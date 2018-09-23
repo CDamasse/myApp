@@ -1,17 +1,27 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-icon name="md-contact" col-1></ion-icon>
+        <ion-title col-10>Accueil</ion-title>
+        <button col-1 id="settings-button" (click)="pushPageSettings()">
+          <ion-icon name="settings"></ion-icon>
+        </button>
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding class="master">
+  <ion-grid id="buttons">
+    <ion-row align-items-center justify-content-center>
+      <button ion-button large col-6 (click)="pushPageObjects()">Mes objets</button>
+    </ion-row>
+    <ion-row class="buttons-menu" align-items-center justify-content-center>
+      <button ion-button large col-6 (click)="pushPageMap()">Carte</button>
+    </ion-row>
+    <ion-row class="buttons-menu" align-items-center justify-content-center>
+      <button ion-button large col-6 (click)="pushPageNotif()">Notifications</button>
+    </ion-row>
+  </ion-grid>
 </ion-content>
